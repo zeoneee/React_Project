@@ -19,9 +19,9 @@ function MainPage() {
                             </nav>
                         </div>
                     </div>
-                    <div tabindex="-1" class="sub-menu-area">
+                    {/* <div tabindex="-1" class="sub-menu-area">
                         <div class="sub-menu">sub-menu</div>
-                    </div>
+                    </div> */}
                 </div>
             </header>
 
@@ -39,14 +39,22 @@ function MainPage() {
                         <div class="content-inner">
                             <div class="grid-container">
                                 {/* <div class="nav-grid-wrapper">네비게이션 바</div> */}
-                                <div class="content-area">content area
+                                <div class="content-area">
                                     {/* <div class="head-wrap">content wrap</div> */}
-                                    <div class="item-title-area">item title area</div>
-                                    <div class="lecture-note">강의 노트</div>
+                                    <div class="item-title-area">나의 강의 노트</div>
+                                    <div class="lecture-note-area">
+                                        <div class="lecture">lecture</div>
+                                        <div class="lecture">lecture</div>
+                                        {/* <div class="lecture">lecture</div>
+                                        <div class="lecture">lecture</div> */}
+                                        {/* lecture flex에서 inline 이후 넘어가는거 적용하기 */}
+                                    </div>
+                                    content-area
                                 </div>
-                                <div class="side-area">side area
+                                <div class="side-area">
                                     <div class="diary">diary</div>
                                     <div class="vocab">voca book</div>
+                                    side-area
                                 </div>
                             </div>
                         </div>
