@@ -38,13 +38,15 @@ function MainPage() {
                     <div class="content-comp side-menu">
                         <div class="content-inner">
                             <div class="grid-container">
-                                <div class="nav-grid-wrapper">네비게이션 바</div>
-                                <div class="content-area">
+                                {/* <div class="nav-grid-wrapper">네비게이션 바</div> */}
+                                <div class="content-area">content area
                                     {/* <div class="head-wrap">content wrap</div> */}
                                     <div class="item-title-area">item title area</div>
+                                    <div class="lecture-note">강의 노트</div>
+                                </div>
+                                <div class="side-area">side area
                                     <div class="diary">diary</div>
                                     <div class="vocab">voca book</div>
-                                    <div class="lecture-note">강의 노트</div>
                                 </div>
                             </div>
                         </div>

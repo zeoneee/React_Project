@@ -170,8 +170,10 @@ div {
 }
 
 .apply-grid-system .content-inner .grid-container {
-    /* align-items: center;
-    display: inline-flex; */
+    /* align-items: center; */
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
 }
 
 .apply-grid-system .content-inner .grid-container .nav-grid-wrapper {
@@ -179,8 +181,10 @@ div {
 }
 
 .apply-grid-system .content-inner .grid-container .content-area {
-    /* padding-top: 136px;
-    background-color: lightpink; */
+    padding-top: 136px;
+    width: 90%;
+    height: 100%;
+    background-color: lightpink;
 }
 
 .apply-grid-system .content-inner .grid-container .content-area .head-wrap {
@@ -188,7 +192,7 @@ div {
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    width: 70%;
     background-color: lightgoldenrodyellow;
 }
 
@@ -206,7 +210,14 @@ div {
     background-color: lightgreen;
 }
 
-.apply-grid-system .content-inner .grid-container .content-area .diary {
+.apply-grid-system .content-inner .grid-container .side-area {
+    padding-top: 136px;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.apply-grid-system .content-inner .grid-container .side-area .diary {
     grid-column: span 2 / auto;
     grid-row-start: 1;
     grid-row-end: span 1;
@@ -215,7 +226,7 @@ div {
     background-color: lightsalmon;
 }
 
-.apply-grid-system .content-inner .grid-container .content-area .vocab {
+.apply-grid-system .content-inner .grid-container .side-area .vocab {
     grid-column: span 2 / auto;
     grid-row-start: 2;
     grid-row-end: span 1;
