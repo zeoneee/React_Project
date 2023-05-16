@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './MainPage.css'
 
 function MainPage() {
@@ -12,9 +13,15 @@ function MainPage() {
                         <div class="menu">
                             <nav>
                                 <ul>
-                                    <li class>홈 피드</li>
-                                    <li class="is--active">메인 프로젝트</li>
-                                    <li class>팀원 소개</li>
+                                    <Link to="/">
+                                        <li>홈 피드</li>
+                                    </Link>
+                                    <Link to="/MainPage">
+                                        <li class="is--active">메인 프로젝트</li>
+                                    </Link>
+                                    <Link to="/MemberPage">
+                                        <li>팀원 소개</li>
+                                    </Link>
                                 </ul>
                             </nav>
                         </div>
