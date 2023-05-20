@@ -1,11 +1,11 @@
 /* MainPage */
 
 #app {
-    min-width: 1280px;
-    width: 100vh;
-    margin: 0px;
-    /* padding: 2rem; */
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 56px;
 }
 
 div {
@@ -110,8 +110,6 @@ div {
     background-color: lightblue;
 }
 
-.main-banner-comp .main-banner-inner {}
-
 .main-banner-comp .main-banner-inner .title-area {
     left: 50%;
     padding: 20px 20px 0;
@@ -134,8 +132,6 @@ div {
     background-color: lightcyan;
 }
 
-.main-banner-comp .main-banner-inner .bg-area {}
-
 
 /* apply-grid-system */
 
@@ -147,15 +143,13 @@ div {
 
 .apply-grid-system .content-comp {
     height: 55vh;
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     padding: 0 20px;
     position: relative;
     background-color: lightyellow;
 }
-
-.apply-grid-system .side-menu {}
 
 .apply-grid-system .content-inner {
     min-width: 300px;
@@ -175,26 +169,11 @@ div {
     flex-flow: row wrap;
 }
 
-
-/* .apply-grid-system .content-inner .grid-container .nav-grid-wrapper {
-    background-color: lightpink;
-} */
-
 .apply-grid-system .content-inner .content-area {
-    width: 70%;
+    width: 75vw;
     height: 100vh;
     background-color: lightpink;
 }
-
-
-/* .apply-grid-system .content-inner .grid-container .content-area .head-wrap {
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 70%;
-    background-color: lightgoldenrodyellow; 
-}*/
 
 .apply-grid-system .content-inner .content-area .item-title-area {
     align-items: center;
@@ -217,6 +196,7 @@ div {
     margin: 10px;
     display: inline-flex;
     flex-flow: row wrap;
+    justify-content: space-around;
     background-color: lightskyblue;
 }
 
@@ -228,7 +208,7 @@ div {
 }
 
 .apply-grid-system .content-inner .side-area {
-    width: 30%;
+    width: 25vw;
     height: 100vh;
     text-align: center;
     font-size: large;
@@ -237,7 +217,7 @@ div {
     background-color: yellow;
 }
 
-.apply-grid-system .content-inner .side-area .diary-area {
+.apply-grid-system .content-inner .side-area .diary-large-area {
     /* grid-column: span 2 / auto;
     grid-row-start: 1;
     grid-row-end: span 1;
@@ -245,13 +225,15 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
-    background-color: lightsalmon;
 }
 
-.diary-area .diary {
+.diary-large-area .diary-area {
+    justify-content: center;
+    align-content: space-around;
     background-color: red;
     border-radius: 20px;
     height: 95%;
+    overflow: scroll;
 }
 
 .apply-grid-system .content-inner .side-area .vocab-area {
