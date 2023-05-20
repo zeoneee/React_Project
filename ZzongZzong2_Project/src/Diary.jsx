@@ -1,6 +1,6 @@
 import './Diary.css'
 
-function Diary({date,contents}){
+function Diary({date,content}){
 
     return(
     <>
@@ -8,7 +8,7 @@ function Diary({date,contents}){
             {date}
         </div>
         <div className='content'>
-            {contents}
+            {content}
         </div>
     </>
     );

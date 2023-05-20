@@ -214,7 +214,7 @@ div {
     font-size: large;
     font-weight: 500;
     font-style: italic;
-    background-color: yellow;
+    background-color: lightgoldenrodyellow;
 }
 
 .apply-grid-system .content-inner .side-area .diary-large-area {
@@ -230,10 +230,40 @@ div {
 .diary-large-area .diary-area {
     justify-content: center;
     align-content: space-around;
-    background-color: red;
+    background-color: lightcyan;
     border-radius: 20px;
     height: 95%;
-    overflow: scroll;
+    overflow-y: scroll;
+}
+
+.diary-area::-webkit-scrollbar {
+    display: none;
+    /*크롬*/
+}
+
+.diary-large-area .diary-area .input-area {
+    display: inline-flex;
+    justify-content: spa;
+    align-items: center;
+}
+
+.diary-large-area .diary-area #contentInput {
+    width: "100%";
+    height: 50px;
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: small;
+    text-align: left;
+}
+
+.diary-large-area .diary-area #save {
+    padding: 8px;
+    width: 50px;
+    height: 30px;
+    font-size: small;
+    background-color: lightblue;
 }
 
 .apply-grid-system .content-inner .side-area .vocab-area {
@@ -244,11 +274,10 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
-    background-color: lightseagreen;
 }
 
 .vocab-area .voca {
-    background-color: red;
+    background-color: lightcyan;
     border-radius: 20px;
     height: 95%;
 }
