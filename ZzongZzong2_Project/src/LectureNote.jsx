@@ -31,44 +31,71 @@ function LectureNote(){
                     <div id="lec-info">
                         <div>
                             <ul>
-                                <li>교과목명</li>
-                                <li>학수번호</li>
-                                <li>담당교수</li>
+                                <li>
+                                    <label for="inputClassName">교과목명 :</label>
+                                    <input type="text" id="inputClassName"/>
+                                </li>
+                                <li>
+                                    <label for="inputClassCode">학수번호 :</label>
+                                    <input type="text" id="inputClassCode"/>
+                                </li>
+                                <li>
+                                    <label for="inputClassProfName">담당교수 :</label>
+                                    <input type="text" id="inputClassProfName"/>
+                                </li>
                             </ul>
                         </div>
                         <div>
                             <ul>
-                                <li>강의실</li>
-                                <li>강의시간</li>
-                                <li>이메일</li>
+                                <li>
+                                    <label for="inputClassLoca">강의실 :</label>
+                                    <input type="text" id="inputClassLoca"/>
+                                </li>
+                                <li>
+                                    <label for="inputClassTime">강의시간 :</label>
+                                    <input type="text" id="inputClassTime"/>
+                                </li>
+                                <li>
+                                    <label for="inputClassProfEmail">이메일 :</label>
+                                    <input type="text" id="inputClassProfEmail"/>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div id="lecture-team-schedule">
                     <div className="sche-title">
-                        팀 스케줄
+                        팀 스케줄 
                     </div>
                     <div className="sche-list">
-                        <div className="sche-scroll">
-                            <div className="sche-list-board">
-
+                        <div className="sche-list-board">
+                            <div id="sche-board-group01">
+                                예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정
+                            </div>
+                            <div id="sche-board-group02">
+                                진행 중
+                            </div>
+                            <div id="sche-board-group03">
+                                완료
                             </div>
                         </div>
                     </div>
                 </div>
                 <div id='lecture-etc'>
-                    <div>
-                        to-do list
+                    <div className="etc-col">
+                        <div id="etc-toDoList">
+                            to-do list
+                        </div>
+                        <div id="etc-TIL">
+                            TIL
+                        </div>
                     </div>
-                    <div>
-                        TIL
-                    </div>
-                    <div>
-                        강의노트
+                    <div className="etc-row">
+                        <div id="etc-LectStudy">
+                            강의노트
+                        </div>
                     </div>
                 </div>
-                
             </main>
     </div>
 }

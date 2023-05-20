@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './MainPage.css'
+import LectureNote from './LectureNote.jsx'
 
 function MainPage() {
 
@@ -50,7 +51,9 @@ function MainPage() {
                                     {/* <div class="head-wrap">content wrap</div> */}
                                     <div class="item-title-area">나의 강의 노트</div>
                                     <div class="lecture-note-area">
-                                        <div class="lecture">lecture</div>
+                                        <div class="lecture">
+                                            <Link to="/LectureNote">lecture</Link>
+                                        </div>
                                         <div class="lecture">lecture</div>
                                         {/* <div class="lecture">lecture</div>
                                         <div class="lecture">lecture</div> */}

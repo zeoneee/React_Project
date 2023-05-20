@@ -133,31 +133,92 @@
     max-width: 90vw;
     width: 100%;
     height: 25vh;
+    max-height: 30vh;
     text-align: center;
     margin: 1vh 0px;
     background-color: yellow;
+    overflow: scroll;
 }
 
 .sche-title {
     min-height: 40px;
-    padding: 0 106px;
+    padding: 0 10vw;
     background-color: steelblue;
-}
-
-.sche-scroll {
-    flex-grow: 1;
-    overflow: auto;
-    background-color: lightseagreen;
+    text-align: center;
 }
 
 .sche-list-board {
-    margin: 0 106px;
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    justify-content: center;
     background-color: cornflowerblue;
+    
 }
+.sche-list-board #sche-board-group01 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    margin-right: 2vw;
+    background-color: lightgreen;
+}
+
+.sche-list-board #sche-board-group02 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    background-color: skyblue;
+}
+
+.sche-list-board #sche-board-group03 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    margin-left: 2vw;
+    background-color: orange;
+}
+
 
 #lecture-etc {
     width: 100%;
-    max-width: 728px;
-    margin: 1px auto;
+    max-width: 90vw;
+    height: 60vh;
+    max-height: 70vh;
+    margin: 2vh auto;
     background-color: orchid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.etc-col {
+    display: flex;
+    flex-direction: column;
+    max-width: 40vw;
+    width: 90%;
+    margin-right: 2vw;
+}
+.etc-col #etc-toDoList {
+    max-height: 30vh;
+    height: 80%;
+    background-color: aliceblue;
+    margin-bottom: 2vh;
+}
+.etc-col #etc-TIL {
+    max-height: 30vh;
+    height: 80%;
+    background-color: antiquewhite;
+}
+.etc-row {
+    display: flex;
+    flex-direction: row;
+    max-width: 40vw;
+    width: 90%;
+    justify-content: center;
+    background-color: cornsilk;
 }
