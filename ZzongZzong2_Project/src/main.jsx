@@ -6,6 +6,7 @@ import {BrowserRouter} from "react-router-dom"
 
 import './index.css'
 import LectureNote from './LectureNote.jsx'
+import DiaryForm from './DiaryForm'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
