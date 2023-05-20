@@ -41,30 +41,34 @@ function MainPage() {
             </div>
 
             <div class="apply-grid-system">
-                <div class="layout index main">
-                    <div class="content-comp side-menu">
-                        <div class="content-inner">
-                            <div class="grid-container">
-                                {/* <div class="nav-grid-wrapper">네비게이션 바</div> */}
-                                <div class="content-area">
-                                    {/* <div class="head-wrap">content wrap</div> */}
-                                    <div class="item-title-area">나의 강의 노트</div>
-                                    <div class="lecture-note-area">
-                                        <div class="lecture">lecture</div>
-                                        <div class="lecture">lecture</div>
-                                        {/* <div class="lecture">lecture</div>
-                                        <div class="lecture">lecture</div> */}
-                                        {/* lecture flex에서 inline 이후 넘어가는거 적용하기 */}
-                                    </div>
-                                    content-area
+                <div class="content-comp side-menu">
+                    <div class="content-inner">
+                        {/* <div class="grid-container"> */}
+                            {/* <div class="nav-grid-wrapper">네비게이션 바</div> */}
+                            <div class="content-area">
+                                {/* <div class="head-wrap">content wrap</div> */}
+                                <div class="item-title-area">나의 강의 노트</div>
+                                <div class="lecture-note-area">
+                                    <div class="lecture">lecture</div>
+                                    <div class="lecture">lecture</div>
+                                    <div class="lecture">lecture</div>
+                                    <div class="lecture">lecture</div>
+                                    {/* <div class="lecture">lecture</div>
+                                    <div class="lecture">lecture</div> */}
+                                    {/* lecture flex에서 inline 이후 넘어가는거 적용하기 */}
                                 </div>
-                                <div class="side-area">
-                                    <div class="diary">diary</div>
-                                    <div class="vocab">voca book</div>
-                                    side-area
-                                </div>
+                                content-area
                             </div>
-                        </div>
+                            <div class="side-area">
+                                <div class="diary-area">today's diary
+                                    <div class="diary"></div>
+                                </div>
+                                <div class="vocab-area">voca book
+                                    <div class="voca"></div>
+                                </div>
+                                side-area
+                            </div>
+                        {/* </div> */}
                     </div>
                 </div>
             </div>
