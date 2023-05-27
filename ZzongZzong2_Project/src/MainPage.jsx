@@ -2,29 +2,50 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './MainPage.css'
 import Diary from './Diary'
+import Lecture from "./Lecture";
 
 function MainPage() {
 
+    // diary component
     const [diary, setDiary] = useState([
-        { date: '2023-05-16', content: '종강 언제하지' },
-        { date: '2023-05-05', content: '오늘은 어린이날 학교 안갔당' },
-        { date: '2023-04-28', content: '중간고사 언제끝나' }
+        { date: '2023-05-16', content: '네트워크 과제 이번주 수요일까지' },
+        { date: '2023-05-05', content: '웹프 팀 회의 토요일 1시' },
+        { date: '2023-04-28', content: '머신러닝 기출 복습하기' }
     ]);
 
-        const [tempEntry, setTempEntry] = useState({ date: '', content: '' });
+    const [tempEntry, setTempEntry] = useState({ date: '', content: ''});
+    const [tempSubject, setSubject] = useState('');
 
-        const handleSetValue = () => {
-            const currentDate = new Date();
-            const dateString = currentDate.toISOString().slice(0, 10);
-            const newEntry = { date: dateString, content: tempEntry.content };
+    const handleSetValue = () => {
+        const currentDate = new Date();
+        const dateString = currentDate.toISOString().slice(0, 10);
+        const newEntry = { date: dateString, content: tempEntry.content };
 
-            setDiary((prevDiary) => [newEntry, ...prevDiary ]);
-            setTempEntry({ date: '', content: '' });
-        };
-    
-        const handleContentChange = (e) => {
-            setTempEntry((prevEntry) => ({ ...prevEntry, content: e.target.value }));
-        };
+        setDiary((prevDiary) => [newEntry, ...prevDiary ]);
+        setTempEntry({ date: '', content: '' });
+    };
+
+    const handleContentChange = (e) => {
+        setTempEntry((prevEntry) => ({ ...prevEntry, content: e.target.value }));
+    };
+
+    // lecture note component
+    const [lecture, setLecture] = useState([
+        {subject: '웹 프로그래밍'},
+        {subject: '컴퓨터 네트워킹'},
+        {subject: '운영체제'},
+        {subject: '캡스톤 디자인'},
+    ])
+
+    const handleSubjectChange = (e) => {
+        setSubject(e.target.value);
+    };
+
+    const handleSetLecture = () => {
+        const newLecture = [...lecture, { subject: tempSubject }];
+        setLecture(newLecture);
+        handleSubjectChange('');
+    };
 
     return (
         <div id="app">
@@ -65,23 +86,20 @@ function MainPage() {
             <div class="apply-grid-system">
                 <div class="content-comp side-menu">
                     <div class="content-inner">
-                        {/* <div class="grid-container"> */}
-                            {/* <div class="nav-grid-wrapper">네비게이션 바</div> */}
                             <div class="content-area">
-                                {/* <div class="head-wrap">content wrap</div> */}
                                 <div class="item-title-area">나의 강의 노트</div>
                                 <div class="lecture-note-area">
-                                    <Link to="/LectureNote">
-                                        <div class="lecture">lecture</div>    
-                                    </Link>
-                                    <div class="lecture">lecture</div>
-                                    <div class="lecture">lecture</div>
-                                    <div class="lecture">lecture</div>    
-                                    {/* <div class="lecture">lecture</div>
-                                    <div class="lecture">lecture</div> */}
+                                    {lecture.map((entry, index) => (
+                                        <Lecture key={index} subject={entry.subject}/>
+                                    ))}
                                     {/* lecture flex에서 inline 이후 넘어가는거 적용하기 */}
                                 </div>
-                                content-area
+                                <div className="addSubject">
+                                    <input type="text" value={tempSubject} onChange={handleSubjectChange}/>
+                                    <button id= "save" onClick={handleSetLecture}>과목 추가</button>
+                                </div>
+                                
+                                <p>content-area</p>
                             </div>
                             <div class="side-area">
                                 <div class="diary-large-area">today's diary
