@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import './MainPage.css'
-import Diary from './Diary'
+import './MainPage.css';
+import Diary from './Diary';
 import Lecture from "./Lecture";
+import Voca from "./Voca";
 
 function MainPage() {
 
@@ -98,14 +99,14 @@ function MainPage() {
                                     <input type="text" value={tempSubject} onChange={handleSubjectChange}/>
                                     <button id= "save" onClick={handleSetLecture}>과목 추가</button>
                                 </div>
-                                
+
                                 <p>content-area</p>
                             </div>
                             <div class="side-area">
                                 <div class="diary-large-area">today's diary
                                     <div class="diary-area">
                                         <div class="input-area">
-                                            <textarea 
+                                            <textarea
                                                 id="contentInput"
                                                 placeholder="여기에 입력하세요"
                                                 value={tempEntry.content}
@@ -119,7 +120,9 @@ function MainPage() {
                                     </div>
                                 </div>
                                 <div class="vocab-area">voca book
-                                    <div class="voca"></div>
+                                    <div class="voca">
+                                        <Voca />
+                                    </div>
                                 </div>
                                 side-area
                             </div>

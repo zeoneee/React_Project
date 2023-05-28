@@ -1,0 +1,54 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "eng": "apple",
+      "kor": "사과"
+    },
+    {
+      "id": 2,
+      "eng": "banana",
+      "kor": "바나나"
+    },
+    {
+      "id": 3,
+      "eng": "cherry",
+      "kor": "체리"
+    },
+    {
+      "id": 4,
+      "eng": "dog",
+      "kor": "개"
+    },
+    {
+      "id": 5,
+      "eng": "elephant",
+      "kor": "코끼리"
+    },
+    {
+      "id": 6,
+      "eng": "fish",
+      "kor": "물고기"
+    },
+    {
+      "id": 7,
+      "eng": "grape",
+      "kor": "포도"
+    },
+    {
+      "id": 8,
+      "eng": "horse",
+      "kor": "말"
+    },
+    {
+      "id": 9,
+      "eng": "icecream",
+      "kor": "아이스크림"
+    },
+    {
+      "id": 10,
+      "eng": "juice",
+      "kor": "주스"
+    }
+  ]
+}
