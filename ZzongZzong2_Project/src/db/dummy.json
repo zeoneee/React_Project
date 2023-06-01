@@ -2,53 +2,153 @@
   "words": [
     {
       "id": 1,
-      "eng": "apple",
-      "kor": "사과"
+      "eng": "account",
+      "kor": "계산"
     },
     {
       "id": 2,
-      "eng": "banana",
-      "kor": "바나나"
+      "eng": "account for",
+      "kor": "~를 설명하다"
     },
     {
       "id": 3,
-      "eng": "cherry",
-      "kor": "체리"
+      "eng": "benefit",
+      "kor": "~로부터 혜택을 받다"
     },
     {
       "id": 4,
-      "eng": "dog",
-      "kor": "개"
+      "eng": "condense",
+      "kor": "압축하다"
     },
     {
       "id": 5,
-      "eng": "elephant",
-      "kor": "코끼리"
+      "eng": "confidence",
+      "kor": "확신, 자신감"
     },
     {
       "id": 6,
-      "eng": "fish",
-      "kor": "물고기"
+      "eng": "degree",
+      "kor": "학위"
     },
     {
       "id": 7,
-      "eng": "grape",
-      "kor": "포도"
+      "eng": "better",
+      "kor": "~를 개선하다"
     },
     {
       "id": 8,
-      "eng": "horse",
-      "kor": "말"
+      "eng": "conduct",
+      "kor": "실행하다"
     },
     {
       "id": 9,
-      "eng": "icecream",
-      "kor": "아이스크림"
+      "eng": "accure",
+      "kor": "생기다, 얻어지다"
     },
     {
       "id": 10,
-      "eng": "juice",
-      "kor": "주스"
+      "eng": "confirmation",
+      "kor": "확정서"
+    },
+    {
+      "id": 11,
+      "eng": "confer",
+      "kor": "수여하다"
+    },
+    {
+      "id": 12,
+      "eng": "confer with",
+      "kor": "~와 의논하다"
+    },
+    {
+      "id": 13,
+      "eng": "biannual",
+      "kor": "반년마다의"
+    },
+    {
+      "id": 14,
+      "eng": "confiscate",
+      "kor": "압수하다"
+    },
+    {
+      "id": 15,
+      "eng": "conform",
+      "kor": "일치하다"
+    },
+    {
+      "id": 16,
+      "eng": "binding",
+      "kor": "결속력 있는"
+    },
+    {
+      "id": 17,
+      "eng": "itinerary",
+      "kor": "여행 일정표"
+    },
+    {
+      "id": 18,
+      "eng": "mutually",
+      "kor": "상호적으로"
+    },
+    {
+      "id": 19,
+      "eng": "obligate",
+      "kor": "의무를 지우다"
+    },
+    {
+      "id": 20,
+      "eng": "needlessly",
+      "kor": "불필요하게"
+    },
+    {
+      "id": 21,
+      "eng": "jet lag",
+      "kor": "시차증"
+    },
+    {
+      "id": 22,
+      "eng": "suffer",
+      "kor": "고통을 받다"
+    },
+    {
+      "id": 23,
+      "eng": "tolerant",
+      "kor": "관대한"
+    },
+    {
+      "id": 24,
+      "eng": "liberal",
+      "kor": "자유주의자, 자유당원"
+    },
+    {
+      "id": 25,
+      "eng": "substitute",
+      "kor": "대체하다"
+    },
+    {
+      "id": 26,
+      "eng": "contempt",
+      "kor": "경멸"
+    },
+    {
+      "id": 27,
+      "eng": "contend",
+      "kor": "주장하다"
+    },
+    {
+      "id": 28,
+      "eng": "resemble",
+      "kor": "닮다"
+    },
+    {
+      "id": 29,
+      "eng": "reconsider",
+      "kor": "다시 생각하다"
+    },
+    {
+      "id": 30,
+      "eng": "reconcile",
+      "kor": "화해시키다"
     }
   ]
 }

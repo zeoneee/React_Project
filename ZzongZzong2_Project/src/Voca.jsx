@@ -1,7 +1,15 @@
 import './Voca.css'
 import dummy from './db/dummy.json'
 
+function getRandomWords() {
+    const shuffledWord = dummy.words.sort(() => Math.random() - 0.5);
+
+    return shuffledWord.slice(0, 5);
+}
+
 function Voca() {
+    const shuffledWord = getRandomWords();
+
     return (
         <>
             <div className="voca">
@@ -13,7 +21,7 @@ function Voca() {
                         <div className="voca-list-board">
                             <table>
                                 <tbody>
-                                {dummy.words.map(word => (
+                                {shuffledWord.map(word => (
                                     <tr key={word.id}>
                                         <td>{word.eng}</td>
                                         <td>{word.kor}</td>
