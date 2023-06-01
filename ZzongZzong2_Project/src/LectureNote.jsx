@@ -4,8 +4,8 @@ import './LectureNote.css'
 function LectureNote(){
 
 
-
-    return <div id="lecture">
+    return (
+    <div id="lecture">
         <header className="header-comp">
                 <div className="header-inner">
                     <div className="global-menu-area">
@@ -32,15 +32,15 @@ function LectureNote(){
                         <div>
                             <ul>
                                 <li>
-                                    <label for="inputClassName">교과목명 :</label>
+                                    <label htmlFor="inputClassName">교과목명 :</label>
                                     <input type="text" id="inputClassName"/>
                                 </li>
                                 <li>
-                                    <label for="inputClassCode">학수번호 :</label>
+                                    <label htmlFor="inputClassCode">학수번호 :</label>
                                     <input type="text" id="inputClassCode"/>
                                 </li>
                                 <li>
-                                    <label for="inputClassProfName">담당교수 :</label>
+                                    <label htmlFor="inputClassProfName">담당교수 :</label>
                                     <input type="text" id="inputClassProfName"/>
                                 </li>
                             </ul>
@@ -48,15 +48,15 @@ function LectureNote(){
                         <div>
                             <ul>
                                 <li>
-                                    <label for="inputClassLoca">강의실 :</label>
+                                    <label htmlFor="inputClassLoca">강의실 :</label>
                                     <input type="text" id="inputClassLoca"/>
                                 </li>
                                 <li>
-                                    <label for="inputClassTime">강의시간 :</label>
+                                    <label htmlFor="inputClassTime">강의시간 :</label>
                                     <input type="text" id="inputClassTime"/>
                                 </li>
                                 <li>
-                                    <label for="inputClassProfEmail">이메일 :</label>
+                                    <label htmlFor="inputClassProfEmail">이메일 :</label>
                                     <input type="text" id="inputClassProfEmail"/>
                                 </li>
                             </ul>
@@ -67,19 +67,35 @@ function LectureNote(){
                     <div className="sche-title">
                         팀 스케줄 
                     </div>
-                    <div className="sche-list">
+                    <toDoList />
+                    {/* <div className="sche-list">
                         <div className="sche-list-board">
                             <div id="sche-board-group01">
-                                예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정<br/>예정
+                                <div className="group-title">예정</div>
+                                <ul>
+                                    <li>예정 리스트</li>
+                                    <li>예정 리스트</li>
+                                    <li>예정 리스트</li>
+                                </ul>
                             </div>
                             <div id="sche-board-group02">
-                                진행 중
+                                <div className="group-title">진행 중</div>
+                                <ul>
+                                    <li>진행 중 리스트</li>
+                                    <li>진행 중 리스트</li>
+                                    <li>진행 중 리스트</li>
+                                </ul>
                             </div>
                             <div id="sche-board-group03">
-                                완료
+                                <div className="group-title">완료</div>
+                                <ul>
+                                    <li>완료 리스트</li>
+                                    <li>완료 리스트</li>
+                                    <li>완료 리스트</li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <div id='lecture-etc'>
                     <div className="etc-col">
@@ -97,7 +113,8 @@ function LectureNote(){
                     </div>
                 </div>
             </main>
-    </div>
+        </div>
+    )
 }
 
 export default LectureNote;

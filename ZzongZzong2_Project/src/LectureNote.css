@@ -137,7 +137,7 @@
     text-align: center;
     margin: 1vh 0px;
     background-color: yellow;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .sche-title {
@@ -161,6 +161,30 @@
     max-width: 25vw;
     width: 100%;
     height: auto;
+    background-color: lightgreen;
+}
+.sche-list-board #sche-board-group02 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    background-color: lightgoldenrodyellow;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+.sche-list-board #sche-board-group03 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
+    background-color: lightgreen;
+}
+
+/* .sche-list-board #sche-board-group01 {
+    display: inline;
+    max-width: 25vw;
+    width: 100%;
+    height: auto;
     margin-right: 2vw;
     background-color: lightgreen;
 }
@@ -180,7 +204,7 @@
     height: auto;
     margin-left: 2vw;
     background-color: orange;
-}
+} */
 
 
 #lecture-etc {
