@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './LandingPage.css'
+import './HeaderBar.css'
 
-function LandingPage() {
+function HeaderBar() {
 
     return (
-        <div id="app">
+        <div id="header-app">
             <header class="header-comp">
                 <div class="header-inner">
                     <div class="global-menu-area">
@@ -35,4 +35,4 @@ function LandingPage() {
     )
 }
 
-export default LandingPage;
+export default HeaderBar;
