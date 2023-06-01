@@ -7,7 +7,7 @@ function MainPage() {
 
     return (
         <div id="app">
-            <header className="header-comp">
+            {/* <header className="header-comp">
                 <div className="header-inner">
                     <div className="global-menu-area">
                         <div className="logo">logo</div>
@@ -27,11 +27,8 @@ function MainPage() {
                             </nav>
                         </div>
                     </div>
-                    {/* <div tabindex="-1" class="sub-menu-area">
-                        <div class="sub-menu">sub-menu</div>
-                    </div> */}
                 </div>
-            </header>
+            </header> */}
 
             <div className="main-banner-comp">
                 <div className="main-banner-inner">

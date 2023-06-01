@@ -1,54 +1,54 @@
-import React from "react";
-import "../css/task.css";
-import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
+function Task() {
+  const draggables = document.querySelectorAll(".task");
+  const droppables = document.querySelectorAll(".swim-lane");
 
-class Task extends React.Component {
-  clickHandle = (id) => {
-    this.props.taskOnClick(id);
+  draggables.forEach((task) => {
+    task.addEventListener("dragstart",() => {
+      task.classList.add("is-dragging");
+    });
+    task.addEventListener("dragend", () => {
+      task.classList.add("is-dragging");
+    });
+  });
+
+  droppables.forEach((zone) => {
+    zone.addEventListener("dragover",(e) => {
+      e.preventDefault();
+
+      const bottomTask = insertAboveTask(zone, e.clientY);
+      const curTask = document.querySelector(".is-dragging");
+
+      if(!bottomTask){
+        zone.appendChild(curTask);
+      }
+      else{
+        zone.insertBefore(curTask, bottomTask);
+      }
+    });
+  });
+  
+  const insertAboveTask = (zone, mouseY) => {
+    const els = zone.querySelectorAll(".task:not(.is-gragging)");
+
+    let closestTask = null;
+    let closestOffset = Number.NEGATIVE_INFINITY;
+
+    els.forEach((task) => {
+      const { top } = task.getBoundingClientRect();
+
+      const offset = mouseY - top;
+
+      if(offset < 0 && offset > closestOffset){
+        closestOffset = offset;
+        closestTask = task;
+      }
+    });
+
+    return closestTask;
   };
 
-  render() {
-    let userIcon = this.props.assignUser.map((user, idx) => {
-      return (
-        <div
-          className="header"
-          style={{
-            backgroundImage: "url(" + this.props.user[user].userHeader + ")",
-          }}
-        />
-      );
-    });
-    return (
-      <Draggable draggableId={this.props.draggableId} index={this.props.index}>
-        {(provided, snapshot) => (
-          <div
-            className="task"
-            {...provided.draggableProps}
-            ref={provided.innerRef}
-            draggable
-            {...provided.dragHandleProps}
-            onClick={this.clickHandle.bind(this, this.props.taskId)}
-          >
-            <div className="t_head">
-              <div className={"t_priority " + this.props.priority}>
-                {this.props.priority}
-              </div>
-              <div className="t_done">
-                <div className="bar">done</div>
-              </div>
-            </div>
-            <div className="t_content">
-              <span>{this.props.content}</span>
-            </div>
-            <div className="t_botton">
-              <div className="progressing" />
-              <div className="userIconWraper">{userIcon}</div>
-            </div>
-          </div>
-        )}
-      </Draggable>
-    );
-  }
+  return(
+    <></>
+  );
 }
-
-export default Task;
+export default Task

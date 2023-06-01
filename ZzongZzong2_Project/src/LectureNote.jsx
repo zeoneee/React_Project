@@ -1,5 +1,6 @@
 import React from "react";
 import './LectureNote.css'
+import TodoList from './components/ToDoList'
 
 function LectureNote(){
 
@@ -67,7 +68,7 @@ function LectureNote(){
                     <div className="sche-title">
                         팀 스케줄 
                     </div>
-                    <toDoList />
+                    <TodoList />
                     {/* <div className="sche-list">
                         <div className="sche-list-board">
                             <div id="sche-board-group01">
