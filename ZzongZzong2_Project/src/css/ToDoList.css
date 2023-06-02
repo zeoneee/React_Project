@@ -1,6 +1,6 @@
-.sche-list-board {
+/* .sche-list-board {
   margin-top: 1vh;
-  height: 80%;
+  height: 100vh;
   background-color: #000;
   overflow-y: scroll;
 }
@@ -82,4 +82,54 @@
   box-shadow: 0px, 5px, 15px rgba(0, 0, 0, 0.25);
   background: rgb(50, 50, 50);
   color: white;
+} */
+
+.sche-list-board {
+  margin-top: 1vh;
+  height: 35vh;
+  background-color: #000;
+  overflow-y: scroll;
+}
+
+#sche-kanban-board {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vh;
+  gap: 16px;
+  height: 100%;
+}
+
+#addCardBtn {
+  margin-left: 1vw;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+}
+
+.column {
+  margin-top: 1vh;
+  display: inline-block;
+  flex-direction: column;
+  gap: 12px;
+
+  background-color: whitesmoke;
+  box-shadow: 0px, 5px, 15px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  max-height: auto;
+  height: 100%;
+  width: 25vw;
+
+  flex-shrink: 0;
+}
+
+.card {
+  background: white;
+  color: #000;
+  box-shadow: 0px, 5px, 15px rgba(0, 0, 0, 0.15);
+
+  margin: 1vw;
+  padding: 1vw;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: move;
 }
