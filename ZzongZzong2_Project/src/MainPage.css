@@ -29,8 +29,7 @@ div {
 .header-comp .header-inner {
     display: flex;
     justify-content: space-between;
-    /* background-color: lightblue; */
-    background: #1a1b1e;
+    background-color: lightgoldenrodyellow;
     height: 100%;
     padding: 0 24px;
     position: relative;
@@ -56,11 +55,7 @@ div {
 .header-comp .header-inner .global-menu-area .menu {
     align-items: center;
     display: flex;
-    /* height: 100%;
-    scrollbar-width: none;
-    white-space: nowrap;
-    width: calc(100vw - 99px); */
-    background-color: lightgray;
+    background-color: lightgoldenrodyellow;
 }
 
 .global-menu-area .menu::-webkit-scrollbar {
@@ -79,24 +74,6 @@ div {
     float: none;
     padding: 0 2px;
     margin: 5px;
-    background-color: aliceblue;
-}
-
-
-/* .header-comp .header-inner .global-menu-area .menu li:first-child {
-    padding: 0;
-    background-color: yellow;
-} */
-
-.header-comp .header-inner .sub-menu-area {
-    float: right;
-}
-
-.header-comp .header-inner .sub-menu-area .sub-menu {
-    /* padding-top: 13px; */
-    /* padding: 0px; */
-    height: 100%;
-    background-color: lightgoldenrodyellow;
 }
 
 
@@ -111,7 +88,7 @@ div {
     position: relative;
     width: 100%;
     z-index: 10;
-    background-color: lightblue;
+    background-color: lightcyan;
 }
 
 .main-banner-comp .main-banner-inner .title-area {
@@ -152,7 +129,6 @@ div {
     justify-content: center;
     padding: 0 20px;
     position: relative;
-    background-color: lightyellow;
 }
 
 .apply-grid-system .content-inner {
@@ -163,7 +139,6 @@ div {
     /* display: inline-flex; */
     display: flex;
     text-align: left;
-    background-color: lightcoral;
 }
 
 .apply-grid-system .content-inner .grid-container {
@@ -177,7 +152,6 @@ div {
 .apply-grid-system .content-inner .content-area {
     width: 75vw;
     height: 100vh;
-    background-color: lightpink;
 }
 
 .apply-grid-system .content-inner .content-area .item-title-area {
@@ -186,12 +160,11 @@ div {
     font-size: 20px;
     font-weight: 700;
     grid-column-start: 1;
-    height: 30px;
+    height: 50px;
     justify-content: left;
     border-bottom: 1px solid;
     /* margin-bottom: 16px;
     position: absolute; */
-    background-color: lightgreen;
 }
 
 .apply-grid-system .content-inner .content-area .lecture-note-area {
@@ -202,7 +175,6 @@ div {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    background-color: lightskyblue;
 }
 
 .apply-grid-system .content-inner .content-area .lecture-note-area .lecture {
@@ -230,7 +202,7 @@ div {
     font-size: large;
     font-weight: 500;
     font-style: italic;
-    background-color: lightgoldenrodyellow;
+    background-color: lightyellow;
 }
 
 .apply-grid-system .content-inner .side-area .diary-large-area {

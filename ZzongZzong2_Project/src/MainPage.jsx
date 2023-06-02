@@ -99,8 +99,6 @@ function MainPage() {
                                     <input type="text" value={tempSubject} onChange={handleSubjectChange}/>
                                     <button id= "save" onClick={handleSetLecture}>과목 추가</button>
                                 </div>
-
-                                <p>content-area</p>
                             </div>
                             <div class="side-area">
                                 <div class="diary-large-area">today's diary
