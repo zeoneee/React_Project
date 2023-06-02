@@ -1,8 +1,9 @@
 import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
 import {Routes, Route} from "react-router-dom"
 
-import HeaderBar from './HeaderBar'
 import LandingPage from './LandingPage'
 import MainPage from './MainPage'
 import MemberPage from './MemberPage'
@@ -13,7 +14,6 @@ function App() {
 
   return (
     <>
-      <HeaderBar />
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/MainPage' element={<MainPage/>}/>
