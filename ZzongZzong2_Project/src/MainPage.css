@@ -1,105 +1,5 @@
 /* MainPage */
 
-#app {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    padding-top: 56px;
-}
-
-div {
-    display: block;
-}
-
-
-/* header */
-
-.header-comp {
-    height: 56px;
-    left: 0;
-    min-width: 300px;
-    position: fixed;
-    top: 0;
-    transition: top .3s;
-    width: 100%;
-    z-index: 4000;
-}
-
-.header-comp .header-inner {
-    display: flex;
-    justify-content: space-between;
-    /* background-color: lightblue; */
-    background: #1a1b1e;
-    height: 100%;
-    padding: 0 24px;
-    position: relative;
-    transition: background .1s;
-    width: 100%;
-    z-index: 1001;
-}
-
-.header-comp .header-inner .global-menu-area {
-    align-items: center;
-    display: inline-flex;
-    height: 100%;
-}
-
-.header-comp .header-inner .global-menu-area .logo {
-    padding: 0px 5px;
-    position: relative;
-    z-index: 10;
-    height: 100%;
-    background-color: lightgoldenrodyellow;
-}
-
-.header-comp .header-inner .global-menu-area .menu {
-    align-items: center;
-    display: flex;
-    /* height: 100%;
-    scrollbar-width: none;
-    white-space: nowrap;
-    width: calc(100vw - 99px); */
-    background-color: lightgray;
-}
-
-.global-menu-area .menu::-webkit-scrollbar {
-    display: none;
-    /*크롬*/
-}
-
-.header-comp .header-inner .global-menu-area .menu ul {
-    padding-left: 15px;
-    padding-right: 30px;
-    height: 100%;
-}
-
-.header-comp .header-inner .global-menu-area .menu li {
-    display: inline-block;
-    float: none;
-    padding: 0 2px;
-    margin: 5px;
-    background-color: aliceblue;
-}
-
-
-/* .header-comp .header-inner .global-menu-area .menu li:first-child {
-    padding: 0;
-    background-color: yellow;
-} */
-
-.header-comp .header-inner .sub-menu-area {
-    float: right;
-}
-
-.header-comp .header-inner .sub-menu-area .sub-menu {
-    /* padding-top: 13px; */
-    /* padding: 0px; */
-    height: 100%;
-    background-color: lightgoldenrodyellow;
-}
-
-
 /* main-banner*/
 
 .main-banner-comp {
@@ -113,6 +13,7 @@ div {
     z-index: 10;
     background-color: lightblue;
 }
+
 
 .main-banner-comp .main-banner-inner .title-area {
     left: 50%;
@@ -137,6 +38,7 @@ div {
 }
 
 
+
 /* apply-grid-system */
 
 .apply-grid-system {
@@ -147,7 +49,6 @@ div {
 
 .apply-grid-system .content-comp {
     height: 55vh;
-    width: 100vw;
     display: flex;
     justify-content: center;
     padding: 0 20px;
@@ -155,13 +56,11 @@ div {
     background-color: lightyellow;
 }
 
+
 .apply-grid-system .content-inner {
     min-width: 300px;
-    width: 100vw;
-    height: 100vh;
-    /* position: relative; */
-    /* display: inline-flex; */
-    display: flex;
+    width: 100%;
+    position: relative;
     text-align: left;
     background-color: lightcoral;
 }
@@ -169,18 +68,32 @@ div {
 .apply-grid-system .content-inner .grid-container {
     /* align-items: center; */
     width: 100%;
-    height: 100vh;
-    /* display: inline-flex; */
-    flex-flow: row wrap;
+    height: 100%;
+    display: inline-flex;
 }
 
-.apply-grid-system .content-inner .content-area {
-    width: 75vw;
-    height: 100vh;
+
+/* .apply-grid-system .content-inner .grid-container .nav-grid-wrapper {
+    background-color: lightpink;
+} */
+
+.apply-grid-system .content-inner .grid-container .content-area {
+    width: 100%;
+    height: 100%;
     background-color: lightpink;
 }
 
-.apply-grid-system .content-inner .content-area .item-title-area {
+
+/* .apply-grid-system .content-inner .grid-container .content-area .head-wrap {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 70%;
+    background-color: lightgoldenrodyellow; 
+}*/
+
+.apply-grid-system .content-inner .grid-container .content-area .item-title-area {
     align-items: center;
     display: flex;
     font-size: 20px;
@@ -194,46 +107,29 @@ div {
     background-color: lightgreen;
 }
 
-.apply-grid-system .content-inner .content-area .lecture-note-area {
+.apply-grid-system .content-inner .grid-container .content-area .lecture-note-area {
     grid-column: span 1 / auto;
-    height: auto;
+    height: 80%;
     width: 98%;
     margin: 10px;
     display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
     background-color: lightskyblue;
 }
 
-.apply-grid-system .content-inner .content-area .lecture-note-area .lecture {
-    height: 300px;
-    width: 400px;
+.apply-grid-system .content-inner .grid-container .content-area .lecture-note-area .lecture {
+    height: 50%;
+    width: 100%;
     margin: 10px;
     background-color: lightgoldenrodyellow;
 }
 
-.apply-grid-system .content-inner .addSubject {
-    padding: 20px;
-    text-align: center;
+.apply-grid-system .content-inner .grid-container .side-area {
+    width: 30%;
+    height: 100%;
+    background-color: yellow;
 }
 
-.apply-grid-system .content-inner .addSubject #save {
-    margin: 20px;
-    padding: 5px;
-    font-size: small;
-}
-
-.apply-grid-system .content-inner .side-area {
-    width: 25vw;
-    height: 100vh;
-    text-align: center;
-    font-size: large;
-    font-weight: 500;
-    font-style: italic;
-    background-color: lightgoldenrodyellow;
-}
-
-.apply-grid-system .content-inner .side-area .diary-large-area {
+.apply-grid-system .content-inner .grid-container .side-area .diary {
     /* grid-column: span 2 / auto;
     grid-row-start: 1;
     grid-row-end: span 1;
@@ -241,48 +137,10 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
+    background-color: lightsalmon;
 }
 
-.diary-large-area .diary-area {
-    justify-content: center;
-    align-content: space-around;
-    background-color: lightcyan;
-    border-radius: 20px;
-    height: 95%;
-    overflow-y: scroll;
-}
-
-.diary-area::-webkit-scrollbar {
-    display: none;
-    /*크롬*/
-}
-
-.diary-large-area .diary-area .input-area {
-    display: inline-flex;
-    justify-content: spa;
-    align-items: center;
-}
-
-.diary-large-area .diary-area #contentInput {
-    width: "100%";
-    height: 50px;
-    background-color: white;
-    margin: 15px;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: small;
-    text-align: left;
-}
-
-.diary-large-area .diary-area #save {
-    padding: 8px;
-    width: 50px;
-    height: 30px;
-    font-size: small;
-    background-color: lightblue;
-}
-
-.apply-grid-system .content-inner .side-area .vocab-area {
+.apply-grid-system .content-inner .grid-container .side-area .vocab {
     /* grid-column: span 2 / auto;
     grid-row-start: 2;
     grid-row-end: span 1;
@@ -290,12 +148,7 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
-}
-
-.vocab-area .voca {
-    background-color: lightcyan;
-    border-radius: 20px;
-    height: 95%;
+    background-color: lightseagreen;
 }
 
 
