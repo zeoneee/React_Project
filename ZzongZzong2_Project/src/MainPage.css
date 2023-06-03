@@ -13,70 +13,6 @@ div {
 }
 
 
-/* header */
-
-.header-comp {
-    height: 56px;
-    left: 0;
-    min-width: 300px;
-    position: fixed;
-    top: 0;
-    transition: top .3s;
-    width: 100%;
-    z-index: 4000;
-}
-
-.header-comp .header-inner {
-    display: flex;
-    justify-content: space-between;
-    background-color: lightgoldenrodyellow;
-    height: 100%;
-    padding: 0 24px;
-    position: relative;
-    transition: background .1s;
-    width: 100%;
-    z-index: 1001;
-}
-
-.header-comp .header-inner .global-menu-area {
-    align-items: center;
-    display: inline-flex;
-    height: 100%;
-}
-
-.header-comp .header-inner .global-menu-area .logo {
-    padding: 0px 5px;
-    position: relative;
-    z-index: 10;
-    height: 100%;
-    background-color: lightgoldenrodyellow;
-}
-
-.header-comp .header-inner .global-menu-area .menu {
-    align-items: center;
-    display: flex;
-    background-color: lightgoldenrodyellow;
-}
-
-.global-menu-area .menu::-webkit-scrollbar {
-    display: none;
-    /*크롬*/
-}
-
-.header-comp .header-inner .global-menu-area .menu ul {
-    padding-left: 15px;
-    padding-right: 30px;
-    height: 100%;
-}
-
-.header-comp .header-inner .global-menu-area .menu li {
-    display: inline-block;
-    float: none;
-    padding: 0 2px;
-    margin: 5px;
-}
-
-
 /* main-banner*/
 
 .main-banner-comp {
@@ -100,17 +36,26 @@ div {
     transform: translate(-50%, -50%);
     width: 100%;
     z-index: 5;
-    background-color: lightcoral;
 }
 
 .main-banner-comp .main-banner-inner .desc-area {
     bottom: 26px;
-    /* left: 30px; */
     width: 100%;
     position: absolute;
     text-align: center;
     z-index: 1;
-    background-color: lightcyan;
+    font-size: x-small;
+}
+
+.main-banner-comp .main-banner-inner .desc-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-banner-comp .main-banner-inner .desc-area img {
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -177,13 +122,6 @@ div {
     justify-content: space-around;
 }
 
-.apply-grid-system .content-inner .content-area .lecture-note-area .lecture {
-    height: 300px;
-    width: 400px;
-    margin: 10px;
-    background-color: lightgoldenrodyellow;
-}
-
 .apply-grid-system .content-inner .addSubject {
     padding: 20px;
     text-align: center;
@@ -230,13 +168,15 @@ div {
 }
 
 .diary-large-area .diary-area .input-area {
+    width: 90%;
+    padding: 0;
     display: inline-flex;
     justify-content: spa;
     align-items: center;
 }
 
-.diary-large-area .diary-area #contentInput {
-    width: "100%";
+.diary-large-area .diary-area .input-area #contentInput {
+    width: 90%;
     height: 50px;
     background-color: white;
     margin: 15px;
@@ -246,7 +186,7 @@ div {
     text-align: left;
 }
 
-.diary-large-area .diary-area #save {
+.diary-large-area .diary-area .input-area #save {
     padding: 8px;
     width: 50px;
     height: 30px;

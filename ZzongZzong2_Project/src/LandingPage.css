@@ -14,14 +14,13 @@
 .header-comp .header-inner {
     display: flex;
     justify-content: space-between;
-    /* background-color: lightblue; */
-    background: #1a1b1e;
     height: 100%;
     padding: 0 24px;
     position: relative;
     transition: background .1s;
     width: 100%;
     z-index: 1001;
+    background-color: white;
 }
 
 .header-comp .header-inner .global-menu-area {
@@ -35,7 +34,15 @@
     position: relative;
     z-index: 10;
     height: 100%;
-    background-color: lightgoldenrodyellow;
+    max-width: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.header-comp .header-inner .global-menu-area .logo img {
+    width: 90%;
+    border-radius: 50%;
 }
 
 .header-comp .header-inner .global-menu-area .menu {
@@ -46,7 +53,7 @@
     scrollbar-width: none;
     white-space: nowrap;
     width: calc(100vw - 99px);
-    background-color: lightgray;
+    background-color: white;
 }
 
 .header-comp .header-inner .global-menu-area .menu ul {
@@ -60,22 +67,16 @@
     float: none;
     padding: 0 2px;
     margin: 5px;
-    background-color: aliceblue;
+    color: black;
+    /* 링크의 색상 제거 */
 }
 
-
-/* .header-comp .header-inner .global-menu-area .menu li:first-child {
-    padding: 0;
-    background-color: yellow;
-} */
-
-.header-comp .header-inner .sub-menu-area {
-    float: right;
+.menu li#is--active {
+    font-size: large;
 }
 
-.header-comp .header-inner .sub-menu-area .sub-menu {
-    /* padding-top: 13px; */
-    /* padding: 0px; */
-    height: 100%;
-    background-color: lightgoldenrodyellow;
+.menu li#no--active:hover {
+    font-size: large;
+    background-color: lightyellow;
+    border-radius: 5px;
 }

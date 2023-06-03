@@ -1,8 +1,20 @@
+.voca-title {
+    padding: 10px;
+    margin-left: 15px;
+    font-size: small;
+    font-style: normal;
+    text-align: left;
+}
+
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     border-spacing: 0;
-    border: 1px solid #ddd;
-    margin: 20px auto;
+    /* border: 1px solid #ddd; */
+    margin: 5px auto;
+    margin-top: 0px;
     text-align: center;
+    font-size: small;
+    background-color: white;
+    border-radius: 5px;
 }
