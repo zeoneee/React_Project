@@ -4,7 +4,7 @@ import dummy from './db/dummy.json'
 function getRandomWords() {
     const shuffledWord = dummy.words.sort(() => Math.random() - 0.5);
 
-    return shuffledWord.slice(0, 5);
+    return shuffledWord.slice(0, 10);
 }
 
 function Voca() {
@@ -14,7 +14,7 @@ function Voca() {
         <>
             <div className="voca">
                 <div className="voca-title">
-                    <h3>단어장</h3>
+                    English
                 </div>
                 <div className="voca-list">
                     <div className="voca-scroll">

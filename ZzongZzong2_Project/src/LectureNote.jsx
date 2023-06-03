@@ -13,9 +13,9 @@ function LectureNote(){
                         <div className="menu">
                             <nav>
                                 <ul>
-                                    <li className="is--active">홈 피드</li>
-                                    <li className="is--active">메인 프로젝트</li>
-                                    <li className="is--active">팀원 소개</li>
+                                    <li>홈 피드</li>
+                                    <li id="is--active">메인 프로젝트</li>
+                                    <li>팀원 소개</li>
                                 </ul>
                             </nav>
                         </div>

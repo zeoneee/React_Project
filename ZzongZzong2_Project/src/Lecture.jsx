@@ -7,11 +7,14 @@ function Lecture({subject}){
     <>
         <div>
             <Link to="/LectureNote">
-                <div class="lecture">lecture</div>    
+                <div class="lecture">
+                    <div className='lectureImg'>
+                    </div>
+                    <div className='subject'> 
+                        {subject}
+                    </div>
+                </div>    
             </Link>
-            <div className='subject'> 
-                <h3>{subject}</h3>
-            </div>
         </div>
     </>
     );

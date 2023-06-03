@@ -9,18 +9,20 @@ function LandingPage() {
             <header class="header-comp">
                 <div class="header-inner">
                     <div class="global-menu-area">
-                        <div class="logo">logo</div>
+                        <div class="logo">
+                            <img src="src/assets/zzongzzong.jpg"/>
+                        </div>
                         <div class="menu">
                             <nav>
                                 <ul>
                                     <Link to="/">
-                                        <li class="is--active">홈 피드</li>
+                                        <li id="is--active">홈 피드</li>
                                     </Link>
                                     <Link to="/MainPage">
-                                        <li>메인 프로젝트</li>
+                                        <li id="no--active">메인 프로젝트</li>
                                     </Link>
                                     <Link to="/MemberPage">
-                                        <li>팀원 소개</li>
+                                        <li id="no--active">팀원 소개</li>
                                     </Link>
                                 </ul>
                             </nav>

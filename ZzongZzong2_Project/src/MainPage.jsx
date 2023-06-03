@@ -53,34 +53,38 @@ function MainPage() {
             <header class="header-comp">
                 <div class="header-inner">
                     <div class="global-menu-area">
-                        <div class="logo">logo</div>
+                        <div class="logo">
+                            <img src="src/assets/zzongzzong.jpg"/>
+                        </div>
                         <div class="menu">
                             <nav>
                                 <ul>
                                     <Link to="/">
-                                        <li>홈 피드</li>
+                                        <li id="no--active">홈 피드</li>
                                     </Link>
                                     <Link to="/MainPage">
-                                        <li class="is--active">메인 프로젝트</li>
+                                        <li id="is--active">메인 프로젝트</li>
                                     </Link>
                                     <Link to="/MemberPage">
-                                        <li>팀원 소개</li>
+                                        <li id="no--active">팀원 소개</li>
                                     </Link>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-                    {/* <div tabindex="-1" class="sub-menu-area">
-                        <div class="sub-menu">sub-menu</div>
-                    </div> */}
                 </div>
             </header>
 
             <div class="main-banner-comp">
                 <div class="main-banner-inner">
-                    <div class="title-area">title-area</div>
-                    <div class="desc-area">desc-area</div>
-                    <div class="bg-area">bg-area</div>
+                    <div class="title-area">
+                        <h1>나만의 강의 노트 관리</h1>
+                        <h2>zzong zzong과 함께하세요</h2>
+                    </div>
+                    <div class="desc-area">zzongzzong-react-project</div>
+                    <div class="bg-area">
+                        <img src="src/assets/donggukUniv.jpeg"/>
+                    </div>
                 </div>
             </div>
 
@@ -93,7 +97,6 @@ function MainPage() {
                                     {lecture.map((entry, index) => (
                                         <Lecture key={index} subject={entry.subject}/>
                                     ))}
-                                    {/* lecture flex에서 inline 이후 넘어가는거 적용하기 */}
                                 </div>
                                 <div className="addSubject">
                                     <input type="text" value={tempSubject} onChange={handleSubjectChange}/>
@@ -122,9 +125,7 @@ function MainPage() {
                                         <Voca />
                                     </div>
                                 </div>
-                                side-area
                             </div>
-                        {/* </div> */}
                     </div>
                 </div>
             </div>
