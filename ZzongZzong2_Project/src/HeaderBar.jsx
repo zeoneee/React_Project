@@ -1,25 +1,26 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import './HeaderBar.css'
 
-function LandingPage(){
+function HeaderBar() {
 
     return (
-        <div id="app">
-            <header class="header-comp">
-                <div class="header-inner">
-                    <div class="global-menu-area">
-                        <div class="logo">
-                            <img src="src/assets/zzongzzong.jpg"/>
-                        </div>
-                        <div class="menu">
+        <div id="header-app">
+            <header className="header-comp">
+                <div className="header-inner">
+                    <div className="global-menu-area">
+                        <div className="logo">logo</div>
+                        <div className="menu">
                             <nav>
                                 <ul>
                                     <Link to="/">
-                                        <li id="is--active">홈 피드</li>
+                                        <li className="is--active">홈 피드</li>
                                     </Link>
                                     <Link to="/MainPage">
-                                        <li id="no--active">메인 프로젝트</li>
+                                        <li>메인 프로젝트</li>
                                     </Link>
                                     <Link to="/MemberPage">
-                                        <li id="no--active">팀원 소개</li>
+                                        <li>팀원 소개</li>
                                     </Link>
                                 </ul>
                             </nav>
@@ -34,4 +35,4 @@ function LandingPage(){
     )
 }
 
-export default LandingPage
+export default HeaderBar;

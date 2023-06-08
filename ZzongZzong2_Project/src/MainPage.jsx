@@ -50,7 +50,7 @@ function MainPage() {
 
     return (
         <div id="app">
-            <header class="header-comp">
+            {/* <header class="header-comp">
                 <div class="header-inner">
                     <div class="global-menu-area">
                         <div class="logo">
@@ -73,7 +73,7 @@ function MainPage() {
                         </div>
                     </div>
                 </div>
-            </header>
+            </header> */}
 
             <div class="main-banner-comp">
                 <div class="main-banner-inner">
@@ -88,12 +88,12 @@ function MainPage() {
                 </div>
             </div>
 
-            <div class="apply-grid-system">
-                <div class="content-comp side-menu">
-                    <div class="content-inner">
-                            <div class="content-area">
-                                <div class="item-title-area">나의 강의 노트</div>
-                                <div class="lecture-note-area">
+            <div className="apply-grid-system">
+                <div className="content-comp side-menu">
+                    <div className="content-inner">
+                            <div className="content-area">
+                                <div className="item-title-area">나의 강의 노트</div>
+                                <div className="lecture-note-area">
                                     {lecture.map((entry, index) => (
                                         <Lecture key={index} subject={entry.subject}/>
                                     ))}
@@ -103,10 +103,10 @@ function MainPage() {
                                     <button id= "save" onClick={handleSetLecture}>과목 추가</button>
                                 </div>
                             </div>
-                            <div class="side-area">
-                                <div class="diary-large-area">today's diary
-                                    <div class="diary-area">
-                                        <div class="input-area">
+                            <div className="side-area">
+                                <div className="diary-large-area">today's diary
+                                    <div className="diary-area">
+                                        <div className="input-area">
                                             <textarea
                                                 id="contentInput"
                                                 placeholder="여기에 입력하세요"
@@ -120,8 +120,8 @@ function MainPage() {
                                         ))}
                                     </div>
                                 </div>
-                                <div class="vocab-area">voca book
-                                    <div class="voca">
+                                <div className="vocab-area">voca book
+                                    <div className="voca">
                                         <Voca />
                                     </div>
                                 </div>
@@ -130,7 +130,7 @@ function MainPage() {
                 </div>
             </div>
 
-            <div class="modal-overlay"></div>
+            <div className="modal-overlay"></div>
         </div>
     )
 }
