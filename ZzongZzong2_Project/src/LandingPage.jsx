@@ -1,8 +1,11 @@
+import React from "react"
+import { Link } from "react-router-dom"
+import './LandingPage.css'
 
 function LandingPage(){
 
     return (
-        <div id="app">
+        <div id="header">
             <header class="header-comp">
                 <div class="header-inner">
                     <div class="global-menu-area">

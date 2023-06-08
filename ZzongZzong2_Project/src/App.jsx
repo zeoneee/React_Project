@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <HeaderBar />
+      <LandingPage />
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/MainPage' element={<MainPage/>}/>
