@@ -27,7 +27,6 @@ div {
     background-color: lightcyan;
 }
 
-
 .main-banner-comp .main-banner-inner .title-area {
     left: 50%;
     padding: 20px 20px 0;
@@ -60,7 +59,6 @@ div {
 }
 
 
-
 /* apply-grid-system */
 
 .apply-grid-system {
@@ -71,25 +69,29 @@ div {
 
 .apply-grid-system .content-comp {
     height: 55vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     padding: 0 20px;
     position: relative;
 }
 
-
 .apply-grid-system .content-inner {
     min-width: 300px;
-    width: 100%;
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    /* display: inline-flex; */
+    display: flex;
     text-align: left;
 }
 
 .apply-grid-system .content-inner .grid-container {
     /* align-items: center; */
     width: 100%;
-    height: 100%;
-    display: inline-flex;
+    height: 100vh;
+    /* display: inline-flex; */
+    flex-flow: row wrap;
 }
 
 .apply-grid-system .content-inner .content-area {
@@ -97,17 +99,7 @@ div {
     height: 100vh;
 }
 
-
-/* .apply-grid-system .content-inner .grid-container .content-area .head-wrap {
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 70%;
-    background-color: lightgoldenrodyellow; 
-}*/
-
-.apply-grid-system .content-inner .grid-container .content-area .item-title-area {
+.apply-grid-system .content-inner .content-area .item-title-area {
     align-items: center;
     display: flex;
     font-size: 20px;
@@ -120,9 +112,9 @@ div {
     position: absolute; */
 }
 
-.apply-grid-system .content-inner .grid-container .content-area .lecture-note-area {
+.apply-grid-system .content-inner .content-area .lecture-note-area {
     grid-column: span 1 / auto;
-    height: 80%;
+    height: auto;
     width: 98%;
     margin: 10px;
     display: inline-flex;
@@ -130,10 +122,9 @@ div {
     justify-content: space-around;
 }
 
-.apply-grid-system .content-inner .grid-container .side-area {
-    width: 30%;
-    height: 100%;
-    background-color: yellow;
+.apply-grid-system .content-inner .addSubject {
+    padding: 20px;
+    text-align: center;
 }
 
 .apply-grid-system .content-inner .addSubject #save {
@@ -160,7 +151,6 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
-    background-color: lightsalmon;
 }
 
 .diary-large-area .diary-area {
@@ -212,7 +202,12 @@ div {
     grid-column-end: span 2; */
     height: 40%;
     margin: 20px;
-    background-color: lightseagreen;
+}
+
+.vocab-area .voca {
+    background-color: lightcyan;
+    border-radius: 20px;
+    height: 95%;
 }
 
 
