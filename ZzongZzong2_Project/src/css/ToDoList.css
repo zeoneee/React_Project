@@ -107,7 +107,7 @@
 }
 
 .column {
-  margin-top: 1vh;
+  margin: 1vh 1vw;
   display: inline-block;
   flex-direction: column;
   gap: 12px;
