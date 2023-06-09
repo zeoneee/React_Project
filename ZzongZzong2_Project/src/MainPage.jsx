@@ -4,48 +4,76 @@ import './MainPage.css';
 import Diary from './Diary';
 import Lecture from "./Lecture";
 import Voca from "./Voca";
+import { useReducer } from "react";
+
+const reducer = (state, action) => {
+    switch (action.type) {
+    case "ADD_DIARY_ENTRY":
+        return {
+        ...state,
+        diary: [action.payload, ...state.diary],
+        tempEntry: { date: '', content: '' }
+        };
+    case "SET_ENTRY_CONTENT":
+        return {
+        ...state,
+        tempEntry: { ...state.tempEntry, content: action.payload }
+        };
+    case "SET_LECTURE_SUBJECT":
+        return {
+        ...state,
+        lecture: [...state.lecture, { subject: action.payload }],
+        tempSubject: ''
+        };
+    case "SET_SUBJECT":
+        return {
+        ...state,
+        tempSubject: action.payload
+        };
+    default:
+        return state;
+    }
+};
+
+const initialState = {
+    diary: [
+    { date: '2023-05-16', content: '네트워크 과제 이번주 수요일까지' },
+    { date: '2023-05-05', content: '웹프 팀 회의 토요일 1시' },
+    { date: '2023-04-28', content: '머신러닝 기출 복습하기' }
+    ],
+    tempEntry: { date: '', content: '' },
+    lecture: [
+    { subject: '웹 프로그래밍' },
+    { subject: '컴퓨터 네트워킹' },
+    { subject: '운영체제' },
+    { subject: '캡스톤 디자인' }
+    ],
+    tempSubject: ''
+};
 
 function MainPage() {
 
-    // diary component
-    const [diary, setDiary] = useState([
-        { date: '2023-05-16', content: '네트워크 과제 이번주 수요일까지' },
-        { date: '2023-05-05', content: '웹프 팀 회의 토요일 1시' },
-        { date: '2023-04-28', content: '머신러닝 기출 복습하기' }
-    ]);
-
-    const [tempEntry, setTempEntry] = useState({ date: '', content: ''});
-    const [tempSubject, setSubject] = useState('');
+    const [state, dispatch] = useReducer(reducer, initialState);
+    const { diary, tempEntry, lecture, tempSubject } = state;
 
     const handleSetValue = () => {
         const currentDate = new Date();
         const dateString = currentDate.toISOString().slice(0, 10);
         const newEntry = { date: dateString, content: tempEntry.content };
 
-        setDiary((prevDiary) => [newEntry, ...prevDiary ]);
-        setTempEntry({ date: '', content: '' });
+        dispatch({ type: "ADD_DIARY_ENTRY", payload: newEntry });
     };
 
     const handleContentChange = (e) => {
-        setTempEntry((prevEntry) => ({ ...prevEntry, content: e.target.value }));
+        dispatch({ type: "SET_ENTRY_CONTENT", payload: e.target.value });
     };
 
-    // lecture note component
-    const [lecture, setLecture] = useState([
-        {subject: '웹 프로그래밍'},
-        {subject: '컴퓨터 네트워킹'},
-        {subject: '운영체제'},
-        {subject: '캡스톤 디자인'},
-    ])
-
     const handleSubjectChange = (e) => {
-        setSubject(e.target.value);
+        dispatch({ type: "SET_SUBJECT", payload: e.target.value });
     };
 
     const handleSetLecture = () => {
-        const newLecture = [...lecture, { subject: tempSubject }];
-        setLecture(newLecture);
-        handleSubjectChange('');
+        dispatch({ type: "SET_LECTURE_SUBJECT", payload: tempSubject });
     };
 
     return (
