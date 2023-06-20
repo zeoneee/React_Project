@@ -71,6 +71,11 @@
     /* 링크의 색상 제거 */
 }
 
+.global-menu-area .menu::-webkit-scrollbar {
+    display: none;
+    /*크롬*/
+}
+
 .menu li#is--active {
     font-size: large;
 }

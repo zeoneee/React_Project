@@ -59,15 +59,15 @@ div {
 }
 
 
-/* apply-grid-system */
+/* content */
 
-.apply-grid-system {
-    padding-top: 20px;
+.all-content {
+    padding-top: 0px;
     text-align: center;
     z-index: 1;
 }
 
-.apply-grid-system .content-comp {
+.all-content .content-comp {
     height: 55vh;
     width: 100vw;
     display: flex;
@@ -76,7 +76,7 @@ div {
     position: relative;
 }
 
-.apply-grid-system .content-inner {
+.all-content .content-inner {
     min-width: 300px;
     width: 100vw;
     height: 100vh;
@@ -86,7 +86,7 @@ div {
     text-align: left;
 }
 
-.apply-grid-system .content-inner .grid-container {
+.all-content .content-inner .grid-container {
     /* align-items: center; */
     width: 100%;
     height: 100vh;
@@ -94,25 +94,25 @@ div {
     flex-flow: row wrap;
 }
 
-.apply-grid-system .content-inner .content-area {
+.all-content .content-inner .content-area {
     width: 75vw;
     height: 100vh;
 }
 
-.apply-grid-system .content-inner .content-area .item-title-area {
+.all-content .content-inner .content-area .item-title-area {
     align-items: center;
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     grid-column-start: 1;
-    height: 50px;
+    height: 70px;
     justify-content: left;
     border-bottom: 1px solid;
     /* margin-bottom: 16px;
     position: absolute; */
 }
 
-.apply-grid-system .content-inner .content-area .lecture-note-area {
+.all-content .content-inner .content-area .lecture-note-area {
     grid-column: span 1 / auto;
     height: auto;
     width: 98%;
@@ -122,35 +122,33 @@ div {
     justify-content: space-around;
 }
 
-.apply-grid-system .content-inner .addSubject {
+.all-content .content-inner .addSubject {
     padding: 20px;
     text-align: center;
 }
 
-.apply-grid-system .content-inner .addSubject #save {
+.all-content .content-inner .addSubject #save {
     margin: 20px;
     padding: 5px;
     font-size: small;
 }
 
-.apply-grid-system .content-inner .side-area {
+.all-content .content-inner .side-area {
     width: 25vw;
     height: 100vh;
     text-align: center;
     font-size: large;
     font-weight: 500;
     font-style: italic;
-    background-color: lightyellow;
+    background-color: ivory;
+    position: sticky;
+    top: 0;
+    z-index: 4003;
 }
 
-.apply-grid-system .content-inner .side-area .diary-large-area {
-    /* grid-column: span 2 / auto;
-    grid-row-start: 1;
-    grid-row-end: span 1;
-    grid-column-start: 7;
-    grid-column-end: span 2; */
+.all-content .content-inner .side-area .diary-large-area {
     height: 40%;
-    margin: 20px;
+    margin: 30px;
 }
 
 .diary-large-area .diary-area {
@@ -194,7 +192,7 @@ div {
     background-color: lightblue;
 }
 
-.apply-grid-system .content-inner .side-area .vocab-area {
+.all-content .content-inner .side-area .vocab-area {
     /* grid-column: span 2 / auto;
     grid-row-start: 2;
     grid-row-end: span 1;
