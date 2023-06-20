@@ -6,13 +6,13 @@ function MemberPage() {
 
     return (
         <div id="app">
-            <header class="header-comp">
-                <div class="header-inner">
-                    <div class="global-menu-area">
-                        <div class="logo">
+            <header className="header-comp">
+                <div className="header-inner">
+                    <div className="global-menu-area">
+                        <div className="logo">
                             <img src="src/assets/zzongzzong.jpg"/>
                         </div>
-                        <div class="menu">
+                        <div className="menu">
                             <nav>
                                 <ul>
                                     <Link to="/">

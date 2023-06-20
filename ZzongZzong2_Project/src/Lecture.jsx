@@ -7,7 +7,7 @@ function Lecture({subject}){
     <>
         <div>
             <Link to="/LectureNote">
-                <div class="lecture">
+                <div className="lecture">
                     <div className='lectureImg'>
                     </div>
                     <div className='subject' key={subject}> 

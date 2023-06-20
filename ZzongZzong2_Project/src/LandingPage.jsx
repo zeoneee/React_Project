@@ -6,10 +6,10 @@ function LandingPage() {
 
     return (
         <div id="header">
-            <header class="header-comp">
-                <div class="header-inner">
-                    <div class="global-menu-area">
-                        <div class="logo">
+            <header className="header-comp">
+                <div className="header-inner">
+                    <div className="global-menu-area">
+                        <div className="logo">
                             <img src="src/assets/zzongzzong.jpg"/>
                         </div>
                         <div class="menu">
@@ -28,9 +28,6 @@ function LandingPage() {
                             </nav>
                         </div>
                     </div>
-                    {/* <div tabindex="-1" class="sub-menu-area">
-                        <div class="sub-menu">sub-menu</div>
-                    </div> */}
                 </div>
             </header>
         </div>
