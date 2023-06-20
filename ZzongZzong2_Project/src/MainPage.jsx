@@ -118,7 +118,7 @@ function MainPage() {
                 </div>
             </div>
 
-            <div class="apply-grid-system">
+            <div class="all-content">
                 <div class="content-comp side-menu">
                     <div class="content-inner">
                             <div class="content-area">
