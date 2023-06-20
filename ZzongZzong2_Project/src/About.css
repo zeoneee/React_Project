@@ -1,0 +1,40 @@
+.about-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.about-item-l {
+    margin-top: 56px;
+    flex: 1;
+}
+
+.about-item-c {
+    margin-top: 56px;
+    flex: 1;
+}
+
+.about-item-r {
+    margin-top: 56px;
+    flex: 1;
+}
+
+.about-img {
+    margin-top: 80px;
+    /*width: 80%;*/
+    height: 70vh;
+    border-radius: 30px;
+}
+
+.about-info {
+    margin-top: 15px;
+}
+
+.stroke-text {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
