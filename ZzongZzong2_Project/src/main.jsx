@@ -6,35 +6,35 @@ import {BrowserRouter, createBrowserRouter, RouterProvider} from "react-router-d
 
 import './index.css'
 import ScrollToTop from './components/ScrollTop.jsx'
-import LandingPage from './LandingPage.jsx'
+// import Landing from './Landing.jsx'
 import HeaderBar from './HeaderBar.jsx'
 import MainPage from './MainPage.jsx'
+import SimpleSlider from "./Landing.jsx";
 
-const router = createBrowserRouter(
-  [{
-    path: "/",
-    element: <HeaderBar/>,
-    // <HeaderBar/>,
-    children: [{
-      path: "LandingPage",
-      element: <LandingPage/>
-    },{
-      path: "MainPage",
-      element: <MainPage/>
-    }]
-  }]
-)
+// const router = createBrowserRouter(
+//     [{
+//         path: "/",
+//         element: <HeaderBar/>,
+//         // <HeaderBar/>,
+//         children: [{
+//             path: "Landing",
+//             element: <SimpleSlider/>
+//         }, {
+//             path: "MainPage",
+//             element: <MainPage/>
+//         }]
+//     }]
+// )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    {/* <RouterProvider router={router}></RouterProvider> */}
-    <BrowserRouter>
-      <ScrollToTop />
-      <App/>
-    </BrowserRouter>
-  </React.StrictMode>,
+    <React.StrictMode>
+        {/* <RouterProvider router={router}></RouterProvider> */}
+        <BrowserRouter>
+            <ScrollToTop/>
+            <App/>
+        </BrowserRouter>
+    </React.StrictMode>,
 )
-
 
 
 // return (
