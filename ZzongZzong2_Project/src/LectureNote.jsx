@@ -117,12 +117,26 @@ function LectureNote(){
                         </div>
                     </div>
                     <div id="etc-TIL">
-                        TIL
+                        TIL<br/>
+                        <textarea
+                                id="contentInput"
+                                placeholder="여기에 입력하세요"
+                                value={tempEntry.content}
+                                onChange={handleContentChange}
+                            ></textarea>
+                            <button id = "save" onClick={handleSetValue}>save</button>
                     </div>
                 </div>
                 <div className="etc-row">
                     <div id="etc-LectStudy">
                         강의노트
+                        <textarea
+                                id="contentInput"
+                                placeholder="여기에 입력하세요"
+                                value={tempEntry.content}
+                                onChange={handleContentChange}
+                            ></textarea>
+                            <button id = "save" onClick={handleSetValue}>save</button>
                     </div>
                 </div>
             </div>
