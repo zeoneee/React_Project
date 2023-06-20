@@ -95,7 +95,7 @@ function MainPage() {
                                     <Link to="/MainPage">
                                         <li id="is--active">메인 프로젝트</li>
                                     </Link>
-                                    <Link to="/MemberPage">
+                                    <Link to="/About">
                                         <li id="no--active">팀원 소개</li>
                                     </Link>
                                 </ul>

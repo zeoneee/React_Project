@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import './HeaderBar.css'
 
 function HeaderBar() {
@@ -17,16 +17,16 @@ function HeaderBar() {
                         <div className="menu">
                             <nav>
                                 <ul>
-                                    <Link to="/LandingPage">
+                                    <Link to="/">
                                         <li className={url.includes("/") ? "is-active" : "no-active"}>홈 피드</li>
                                     </Link>
                                     <Link to="/MainPage">
-                                        
-                                        <li className={url.includes("/MainPage") ? "is-active" : "no-active"}>메인 프로젝트</li>
+                                        <li className={url.includes("/MainPage") ? "is-active" : "no-active"}>메인 프로젝트
+                                        </li>
                                     </Link>
-                                    <Link to="/MemberPage">
-                                        
-                                        <li className={url.includes("/MemberPage") ? "is-active" : "no-active"}>팀원 소개</li>
+                                    <Link to="/About">
+                                        <li className={url.includes("/About") ? "is-active" : "no-active"}>팀원 소개
+                                        </li>
                                     </Link>
                                 </ul>
                             </nav>
