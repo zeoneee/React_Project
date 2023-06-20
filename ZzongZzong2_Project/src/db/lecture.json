@@ -1,0 +1,42 @@
+{
+    "lect-name": [
+        {"id": 1, "lecture":"웹프로그래밍"},
+        {"id": 2, "lecture":"컴퓨터 네트워킹"},
+        {"id": 3, "lecture":"운영체제"},
+        {"id": 4, "lecture":"캡스톤 디자인"}
+    ],
+    "lect-info": [
+        {
+            "lecture":"웹프로그래밍",
+            "location":"정보문화관 p402",
+            "lect-num":"SCS4047-02",
+            "lect-time":"화, 목 12.0-13.5",
+            "lect-prof":"제한재",
+            "prof-email":"jhj@dongguk.edu"
+        },
+        {
+            "lecture":"컴퓨터 네트워킹",
+            "location":"신공학관 3163",
+            "lect-num":"INC4110-01",
+            "lect-time":"월, 수 2.0-3.5",
+            "lect-prof":"홍길동",
+            "prof-email":"hgd@dongguk.edu"
+        },
+        {
+            "lecture":"운영체제",
+            "location":"신공학관 5143",
+            "lect-num":"INC4059-01",
+            "lect-time":"화, 목 2.0-4.0",
+            "lect-prof":"김철수",
+            "prof-email":"kcs@dongguk.edu"
+        },
+        {
+            "lecture":"캡스톤 디자인",
+            "location":"신공학관 6141",
+            "lect-num":"INC4084-02",
+            "lect-time":"목 10.0-13.5",
+            "lect-prof":"한웅진",
+            "prof-email":"hwj@dongguk.edu"
+        }
+    ]
+}

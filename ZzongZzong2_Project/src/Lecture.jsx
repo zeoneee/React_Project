@@ -10,7 +10,7 @@ function Lecture({subject}){
                 <div class="lecture">
                     <div className='lectureImg'>
                     </div>
-                    <div className='subject'> 
+                    <div className='subject' key={subject}> 
                         {subject}
                     </div>
                 </div>    
