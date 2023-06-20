@@ -78,13 +78,13 @@ function MainPage() {
 
     return (
         <div id="app">
-            <header class="header-comp">
-                <div class="header-inner">
-                    <div class="global-menu-area">
-                        <div class="logo">
+            <header className="header-comp">
+                <div className="header-inner">
+                    <div className="global-menu-area">
+                        <div className="logo">
                             <img src="src/assets/zzongzzong.jpg"/>
                         </div>
-                        <div class="menu">
+                        <div className="menu">
                             <nav>
                                 <ul>
                                     <Link to="/">
@@ -103,25 +103,25 @@ function MainPage() {
                 </div>
             </header>
 
-            <div class="main-banner-comp">
-                <div class="main-banner-inner">
-                    <div class="title-area">
+            <div className="main-banner-comp">
+                <div className="main-banner-inner">
+                    <div className="title-area">
                         <h1>나만의 강의 노트 관리</h1>
-                        <h2>zzong zzong과 함께하세요</h2>
+                        <h2>zzong zzong과 함께하세요😽</h2>
                     </div>
-                    <div class="desc-area">zzongzzong-react-project</div>
-                    <div class="bg-area">
+                    <div className="desc-area">zzongzzong-react-project</div>
+                    <div className="bg-area">
                         <img src="src/assets/donggukUniv.jpeg"/>
                     </div>
                 </div>
             </div>
 
-            <div class="apply-grid-system">
-                <div class="content-comp side-menu">
-                    <div class="content-inner">
-                            <div class="content-area">
-                                <div class="item-title-area">나의 강의 노트</div>
-                                <div class="lecture-note-area">
+            <div className="all-content">
+                <div className="content-comp">
+                    <div className="content-inner">
+                            <div className="content-area">
+                                <div className="item-title-area">📚 나의 강의 노트</div>
+                                <div className="lecture-note-area">
                                     {lecture.map((entry, index) => (
                                         <Lecture key={index} subject={entry.subject}/>
                                     ))}
@@ -131,10 +131,10 @@ function MainPage() {
                                     <button id= "save" onClick={handleSetLecture}>과목 추가</button>
                                 </div>
                             </div>
-                            <div class="side-area">
-                                <div class="diary-large-area">today's diary
-                                    <div class="diary-area">
-                                        <div class="input-area">
+                            <div className="side-area">
+                                <div className="diary-large-area">today's diary 📝
+                                    <div className="diary-area">
+                                        <div className="input-area">
                                             <textarea
                                                 id="contentInput"
                                                 placeholder="여기에 입력하세요"
@@ -148,8 +148,8 @@ function MainPage() {
                                         ))}
                                     </div>
                                 </div>
-                                <div class="vocab-area">voca book
-                                    <div class="voca">
+                                <div className="vocab-area">voca book 📒
+                                    <div className="voca">
                                         <Voca />
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@ function MainPage() {
                 </div>
             </div>
 
-            <div class="modal-overlay"></div>
+            <div className="modal-overlay"></div>
         </div>
     )
 }
