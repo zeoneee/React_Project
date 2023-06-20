@@ -5,8 +5,6 @@ import Diary from './Diary';
 import Lecture from "./Lecture";
 import Voca from "./Voca";
 import { useReducer } from "react";
-import lectureDB from './db/lecture.json'
-
 
 const reducer = (state, action) => {
     switch (action.type) {
@@ -44,12 +42,12 @@ const initialState = {
     { date: '2023-04-28', content: '머신러닝 기출 복습하기' }
     ],
     tempEntry: { date: '', content: '' },
-    // lecture: [
-    // { subject: '웹 프로그래밍' },
-    // { subject: '컴퓨터 네트워킹' },
-    // { subject: '운영체제' },
-    // { subject: '캡스톤 디자인' }
-    // ],
+    lecture: [
+    { subject: '웹 프로그래밍' },
+    { subject: '컴퓨터 네트워킹' },
+    { subject: '운영체제' },
+    { subject: '캡스톤 디자인' }
+    ],
     tempSubject: ''
 };
 
@@ -77,7 +75,7 @@ function MainPage() {
     const handleSetLecture = () => {
         dispatch({ type: "SET_LECTURE_SUBJECT", payload: tempSubject });
     };
-    
+
     return (
         <div id="app">
             <header className="header-comp">
@@ -95,7 +93,7 @@ function MainPage() {
                                     <Link to="/MainPage">
                                         <li id="is--active">메인 프로젝트</li>
                                     </Link>
-                                    <Link to="/About">
+                                    <Link to="/MemberPage">
                                         <li id="no--active">팀원 소개</li>
                                     </Link>
                                 </ul>
@@ -118,14 +116,14 @@ function MainPage() {
                 </div>
             </div>
 
-            <div class="all-content">
-                <div class="content-comp side-menu">
-                    <div class="content-inner">
-                            <div class="content-area">
-                                <div class="item-title-area">📚 나의 강의 노트</div>
-                                <div class="lecture-note-area">
-                                    {lectureDB["lect-name"].map((item) => (
-                                        <Lecture key={item.id} subject={item.lecture}/>
+            <div className="all-content">
+                <div className="content-comp">
+                    <div className="content-inner">
+                            <div className="content-area">
+                                <div className="item-title-area">📚 나의 강의 노트</div>
+                                <div className="lecture-note-area">
+                                    {lecture.map((entry, index) => (
+                                        <Lecture key={index} subject={entry.subject}/>
                                     ))}
                                 </div>
                                 <div className="addSubject">
