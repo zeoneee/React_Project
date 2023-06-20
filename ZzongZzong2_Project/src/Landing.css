@@ -1,24 +1,28 @@
 .slide-box {
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 .each-slide {
-    width: 100vw;
     height: 60vh;
 }
 
 .page-name {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bold;
     /*letter-spacing: 0.1rem;*/
 }
 
 .project-name {
-    font-size: 4rem;
+    font-size: 5rem;
     /*font-weight: bold;*/
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     text-transform: uppercase;
+}
+
+.function {
+    font-size: 2rem;
+    vertical-align: middle;
 }
 
