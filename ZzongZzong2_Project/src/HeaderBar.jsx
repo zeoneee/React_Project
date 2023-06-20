@@ -21,11 +21,11 @@ function HeaderBar() {
                                         <li className={url.includes("/") ? "is-active" : "no-active"}>홈 피드</li>
                                     </Link>
                                     <Link to="/MainPage">
-                                        <li>메인 프로젝트</li>
+                                        
                                         <li className={url.includes("/MainPage") ? "is-active" : "no-active"}>메인 프로젝트</li>
                                     </Link>
                                     <Link to="/MemberPage">
-                                        <li>팀원 소개</li>
+                                        
                                         <li className={url.includes("/MemberPage") ? "is-active" : "no-active"}>팀원 소개</li>
                                     </Link>
                                 </ul>

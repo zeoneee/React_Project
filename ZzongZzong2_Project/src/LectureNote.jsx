@@ -1,4 +1,5 @@
 import React, { useReducer } from "react";
+import { useLocation } from "react-router-dom";
 import './LectureNote.css'
 import TodoList from './components/ToDoList'
 import Diary from "./Diary";
@@ -31,6 +32,8 @@ const initialState = {
 function LectureNote(){
     const [state, dispatch] = useReducer(reducer, initialState);
     const {diary, TIL, tempEntry, LectStudy} = state;
+    const location = useLocation();
+    const key = location.state.key;
     const handleSetValue = () => {
         const currentDate = new Date();
         const dateString = currentDate.toISOString().slice(0, 10);
@@ -41,26 +44,33 @@ function LectureNote(){
     const handleContentChange = (e) => {
         dispatch({ type: "SET_ENTRY_CONTENT", payload: e.target.value });
     };
-
+    var newInfo;
+    for(var i=0; i<4; i++){
+        if(key["subject"] === lectureDB['lect-info'][i]["lecture"])
+        {
+            newInfo = JSON.parse(JSON.stringify(lectureDB["lect-info"][i]));
+        }
+    }
+    console.log(newInfo);
     return (
     <div id="lecture">
         <main className="lecture-main"> 
             <div id="lecture-info">
-                <div id="lec-title"></div>
+                <div id="lec-title">{ key["subject"] }</div>
                 <div id="lec-info">
                     <div>
                         <ul>
                             <li>
                                 <label htmlFor="inputClassName">교과목명 :</label>
-                                <input type="text" id="inputClassName"/>
+                                <input type="text" id="inputClassName" value={newInfo["lecture"]}/>
                             </li>
                             <li>
                                 <label htmlFor="inputClassCode">학수번호 :</label>
-                                <input type="text" id="inputClassCode"/>
+                                <input type="text" id="inputClassCode" value={newInfo["lect-num"]}/>
                             </li>
                             <li>
                                 <label htmlFor="inputClassProfName">담당교수 :</label>
-                                <input type="text" id="inputClassProfName"/>
+                                <input type="text" id="inputClassProfName" value={newInfo["lect-prof"]}/>
                             </li>
                         </ul>
                     </div>
@@ -68,15 +78,15 @@ function LectureNote(){
                         <ul>
                             <li>
                                 <label htmlFor="inputClassLoca">강의실 :</label>
-                                <input type="text" id="inputClassLoca"/>
+                                <input type="text" id="inputClassLoca" value={newInfo["location"]}/>
                             </li>
                             <li>
                                 <label htmlFor="inputClassTime">강의시간 :</label>
-                                <input type="text" id="inputClassTime"/>
+                                <input type="text" id="inputClassTime" value={newInfo["lect-time"]}/>
                             </li>
                             <li>
                                 <label htmlFor="inputClassProfEmail">이메일 :</label>
-                                <input type="text" id="inputClassProfEmail"/>
+                                <input type="text" id="inputClassProfEmail" value={newInfo["prof-email"]}/>
                             </li>
                         </ul>
                     </div>

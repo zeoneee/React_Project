@@ -1,16 +1,18 @@
 import './Lecture.css'
 import { Link } from "react-router-dom";
 
-function Lecture({subject}){
+function Lecture({ subject }){
 
     return(
     <>
         <div>
-            <Link to="/LectureNote">
+            <Link to='/LectureNote'
+                state= {{ key: {subject} }}
+                >
                 <div className="lecture">
                     <div className='lectureImg'>
                     </div>
-                    <div className='subject' key={subject}> 
+                    <div className='subject'> 
                         {subject}
                     </div>
                 </div>    
